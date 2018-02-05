@@ -17,6 +17,9 @@ if is_connected(REMOTE_SERVER):
     localdata = getlocaljiodata()
     onnetdata = getjiodata()
 else:
-    print ("Connect to JioFi")
+    print ("Please Connect to JioFi Device")
 
-print ("localdata :" +localdata+  ", onnetdata : " + onnetdata)
+if localdata and onnetdata:
+    print ("localdata :" +localdata+  ", onnetdata : " + onnetdata)
+else:
+    print ("Please Connect to JioFi Device")
